@@ -13,9 +13,9 @@ public class EmailService
     
     public EmailService(IConfiguration configuration)
     {
-        _apiKey = "57fdd363e025f1590a4e76b27ed797ae";
-        _secretKey = "4545f38e4fcca852846bd57a081634db";
-        _senderEmail = "onur.tabuk1@gmail.com";
+        _apiKey = "";
+        _secretKey = "";
+        _senderEmail = "";
         Console.WriteLine("EmailService: " + _apiKey + " " + _secretKey + " " + _senderEmail);
         Console.WriteLine("EmailService: " + configuration["MAILJET_API_KEY"] + " " + configuration["MAILJET_SECRET_KEY"] + " " + configuration["MAILJET_SENDER_EMAIL"]);
     }
